@@ -1,0 +1,6 @@
+src/
+examples/
+node_modules/
+coverage/
+dist/tests/
+.env

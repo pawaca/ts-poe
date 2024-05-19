@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+
+		"target": "esnext",
+		"lib": ["esnext", "DOM", "DOM.Iterable"],
+
+		"baseUrl": "./",
+
+		"declaration": true,
+		"outDir": "./dist",
+		"removeComments": true,
+
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+
+		"module": "esnext",
+		"moduleResolution": "bundler"
+	},
+	"include": ["./src/**/*.js", "./src/**/*.ts"],
+	"exclude": ["./node_modules/**"]
+}

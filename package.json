@@ -1,0 +1,82 @@
+{
+	"name": "ts-poe",
+	"version": "1.0.0",
+	"author": "pawaca <pawaca@gmail.com>",
+	"description": "TypeScript implementation of the Poe protocol",
+	"repository": "github:pawaca/ts-poe",
+	"license": "MIT",
+	"type": "module",
+	"types": "dist/src/index.d.ts",
+	"main": "dist/src/index.js",
+	"files": [
+		"dist/src/**/*"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/src/index.d.ts",
+			"default": "./dist/src/index.js"
+		},
+		"./base": {
+			"types": "./dist/src/lib/base.d.ts",
+			"default": "./dist/src/lib/base.js"
+		},
+		"./client": {
+			"types": "./dist/src/lib/client.d.ts",
+			"default": "./dist/src/lib/client.js"
+		},
+		"./express": {
+			"types": "./dist/src/lib/express.d.ts",
+			"default": "./dist/src/lib/express.js"
+		},
+		"./logger": {
+			"types": "./dist/src/lib/logger.d.ts",
+			"default": "./dist/src/lib/logger.js"
+		},
+		"./sse": {
+			"types": "./dist/src/lib/sse.d.ts",
+			"default": "./dist/src/lib/sse.js"
+		},
+		"./templates": {
+			"types": "./dist/src/lib/templates.d.ts",
+			"default": "./dist/src/lib/templates.js"
+		},
+		"./types": {
+			"types": "./dist/src/lib/types.d.ts",
+			"default": "./dist/src/lib/types.js"
+		}
+	},
+	"packageManager": "yarn@1.22.22",
+	"scripts": {
+		"build": "rimraf dist && tsc -p tsconfig.json",
+		"test": "vitest",
+		"coverage": "vitest run --coverage",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write .",
+		"package": "publint"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.21",
+		"@types/node": "^20.12.11",
+		"@typescript-eslint/eslint-plugin": "^7.8.0",
+		"@typescript-eslint/parser": "^7.8.0",
+		"@vitest/coverage-v8": "^1.6.0",
+		"dotenv": "^16.4.5",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"express": "^4.19.2",
+		"prettier": "^3.2.5",
+		"pretty-quick": "^4.0.0",
+		"publint": "^0.2.7",
+		"rimraf": "^5.0.5",
+		"typescript": "^5.4.5",
+		"vite-tsconfig-paths": "^4.3.2",
+		"vitest": "^1.6.0"
+	},
+	"peerDependencies": {
+		"express": "*"
+	},
+	"dependencies": {
+		"axios": "^1.6.8",
+		"form-data": "^4.0.0"
+	}
+}
