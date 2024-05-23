@@ -59,5 +59,5 @@ makeApp(bot, <key>);
 
 ## Samples
 
-Check out starter code in [examples folder](https://github.com/pawaca/ts-poe/examples) for some examples
+Check out starter code in [examples folder](https://github.com/pawaca/ts-poe/tree/main/examples) for some examples
 you can use to get started with bot development.

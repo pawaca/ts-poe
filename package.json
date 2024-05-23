@@ -3,7 +3,15 @@
 	"version": "1.0.0",
 	"author": "pawaca <pawaca@gmail.com>",
 	"description": "TypeScript implementation of the Poe protocol",
-	"repository": "github:pawaca/ts-poe",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pawaca/ts-poe.git"
+	},
+	"keywords": [
+		"poe",
+		"protocol",
+		"typescript"
+	],
 	"license": "MIT",
 	"type": "module",
 	"types": "dist/src/index.d.ts",
